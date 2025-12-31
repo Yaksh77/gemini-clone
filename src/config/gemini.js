@@ -1,5 +1,5 @@
 import axios from "axios";
-const apiKey = "AIzaSyALZeZqLYl_j7Ucd89csrnVs1Xl2z-84Qw";
+const apiKey = process.env.VITE_GEMINI_API_KEY;
 
 export async function runChat(prompt) {
   const response = await axios.post(
